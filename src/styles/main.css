@@ -89,7 +89,6 @@ header .nav__btn {
     position: absolute;
     width: 98%;
     z-index: 90;
-    border: red solid 1px;
     background: #fcfbfb;
     -webkit-transform: translate(-1000px, 120px);
             transform: translate(-1000px, 120px);
@@ -136,9 +135,10 @@ header .nav__btn {
 }
 
 .hero .hero__inner {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   max-width: 1200px;
   gap: 1rem;
   -webkit-box-pack: justify;
@@ -188,6 +188,60 @@ header .nav__btn {
 
 .hero .hero__inner .img-wrap {
   width: 100%;
+}
+
+@media only screen and (max-width: 868px) {
+  .hero {
+    height: 370px;
+  }
+  .hero .hero__inner .text-wrap h1 {
+    font-size: 2.3rem;
+  }
+  .hero .hero__inner .text-wrap h2 {
+    font-size: 1.5rem;
+  }
+  .hero .hero__inner .text-wrap h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .hero .hero__inner .text-wrap h4 {
+    margin: 0.8rem 0;
+    font-size: 0.8rem;
+  }
+  .hero .hero__inner .text-wrap .hero__btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    height: 580px;
+  }
+  .hero .hero__inner {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .hero .hero__inner .text-wrap h1 {
+    font-size: 2.3rem;
+  }
+  .hero .hero__inner .text-wrap h2 {
+    font-size: 1.5rem;
+  }
+  .hero .hero__inner .text-wrap h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .hero .hero__inner .text-wrap h4 {
+    margin: 0.8rem 0;
+    font-size: 0.8rem;
+  }
+  .hero .hero__inner .text-wrap .hero__btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
+    border-radius: 0;
+  }
 }
 
 .list-menu {
