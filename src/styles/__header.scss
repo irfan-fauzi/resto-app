@@ -1,0 +1,29 @@
+header{
+  background: rgb(228, 223, 222);
+  width: 100%;
+  .nav{
+    display: flex;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1.5rem;
+    height: 80px;
+    justify-content: space-between;
+    align-items: center;
+    .nav__title{
+      color: rgb(44, 44, 43);
+      font-family: 'Caveat', cursive;
+      font-size: 2rem;
+    }
+    .nav__list{
+      display: flex;
+      gap: 1rem;
+      .nav__item a{
+        color: rgb(24, 23, 23);
+        font-family: 'Montserrat', sans-serif;
+        cursor: pointer;
+        text-transform: lowercase;
+        letter-spacing: 2px;
+      }
+    }
+  }
+}
