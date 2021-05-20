@@ -30,29 +30,29 @@ class MenuItems extends HTMLElement{
         border-bottom: #b3bdbb solid 1px;
         padding: 10px;
       }
-      h1{
+      .title{
         margin: 0.3rem 0;
         font-size: 1.2rem;
       }
-      h2, h3{
-        font-size: 1rem;
-      }
-      h2{
+      
+      city{
         color:#6d7070;
         font-weight: 600;
+        font-size: 1rem;
       }
-      h3{
+      .rating{
         color: #e87109;
         font-weight: 600;
+        font-size: 1rem;
       }
       @media only screen and (max-width: 868px){
-        h1{
+        .title{
           font-size: 1rem;
         }
-        h2{
+        .city{
           font-size: 0.8rem;
         }
-        h3{
+        .rating{
           font-size: 0.8rem;
           
         }
@@ -64,10 +64,10 @@ class MenuItems extends HTMLElement{
     <article>
       <img src=${dataItem.pictureId} alt="image desc">
       <div class="content">
-        <h1 class="title">${dataItem.name}</h1>
+        <h2 class="title">${dataItem.name}</h2>
         <div class="flex">
-          <h2>${dataItem.city}</h2>
-          <h3>${dataItem.rating}</h3>
+          <h3 class="city">${dataItem.city}</h3>
+          <h4 class="rating">${dataItem.rating}</h4>
         </div>
         <p class="desc">${dataItem.description.substring(0,200)}</p>
       </div>

@@ -19,7 +19,7 @@ a {
 }
 
 header {
-  background: #e4e1e0;
+  background: #fffefe;
   width: 100%;
 }
 
@@ -184,6 +184,15 @@ header .nav__btn {
   font-weight: 600;
   border-radius: 5px;
   cursor: pointer;
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.hero .hero__inner .text-wrap .hero__btn:hover {
+  background: #ff8400;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  color: black;
 }
 
 .hero .hero__inner .img-wrap {
