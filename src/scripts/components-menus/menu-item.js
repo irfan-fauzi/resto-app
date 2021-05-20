@@ -21,7 +21,7 @@ class MenuItems extends HTMLElement{
       }
     </style>
     <article>
-      <img src=${dataItem.pictureId}>
+      <img src=${dataItem.pictureId} alt="image desc">
       <div class="content">
         <h1 class="title">${dataItem.name}</h1>
         <h2>${dataItem.city}</h2>
