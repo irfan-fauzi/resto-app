@@ -254,8 +254,14 @@ header .nav__btn {
 
 .list-menu__title {
   text-align: center;
-  margin: 3rem 0;
+  margin: 4rem 0;
   font-size: 2rem;
+}
+
+@media only screen and (max-width: 868px) {
+  .list-menu__title {
+    font-size: 1.2rem;
+  }
 }
 
 footer {

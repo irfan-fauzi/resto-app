@@ -24,7 +24,7 @@ class MenusList extends HTMLElement{
       :host{
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 1rem;
+        gap: 1.5rem;
       }
     </style>
     

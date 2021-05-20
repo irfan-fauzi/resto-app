@@ -6,7 +6,15 @@
   color: rgb(49, 47, 47);
   &__title {
     text-align: center;
-    margin: 3rem 0;
+    margin: 4rem 0;
     font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 868px){
+  .list-menu{
+    &__title{
+      font-size: 1.2rem;
+    }
   }
 }
