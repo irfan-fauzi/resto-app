@@ -253,26 +253,6 @@ header .nav__btn {
   }
 }
 
-.list-menu {
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 1.5rem;
-  font-family: "Montserrat", sans-serif;
-  color: #312f2f;
-}
-
-.list-menu__title {
-  text-align: center;
-  margin: 4rem 0;
-  font-size: 2rem;
-}
-
-@media only screen and (max-width: 868px) {
-  .list-menu__title {
-    font-size: 1.2rem;
-  }
-}
-
 footer {
   background: #353333;
   height: 80px;
@@ -292,5 +272,9 @@ footer {
 footer h4 {
   font-family: "Caveat", cursive;
   font-size: 2rem;
+}
+
+.article__heading {
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

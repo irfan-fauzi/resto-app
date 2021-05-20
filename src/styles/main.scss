@@ -1,7 +1,11 @@
 @import "_base-style";
 @import "_header";
 @import "_hero";
-@import "_list-menu";
 @import "_footer";
 
+.article{
+ &__heading{
+   text-align: center;
+ } 
+}
 
