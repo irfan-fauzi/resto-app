@@ -143,4 +143,18 @@ header .nav .nav__list .nav__item a {
 .hero .hero__inner .img-wrap {
   width: 100%;
 }
+
+.list-menu {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #312f2f;
+}
+
+.list-menu__title {
+  text-align: center;
+  margin: 3rem 0;
+  font-size: 2rem;
+}
 /*# sourceMappingURL=main.css.map */
