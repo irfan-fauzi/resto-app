@@ -12,7 +12,7 @@ header {
     .nav__title {
       color: rgb(44, 44, 43);
       font-family: "Caveat", cursive;
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
     .nav__list {
       display: flex;
@@ -25,6 +25,10 @@ header {
           text-transform: lowercase;
           letter-spacing: 2px;
           transition: 0.2s ease-in-out;
+          display: inline-block;
+          padding: 13px;
+          font-size: 1.1rem;
+          width: 100%;
         }
         :hover {
           color: rgb(255, 132, 0);
@@ -42,9 +46,10 @@ header {
     .nav__btn {
       display: block;
       border: none;
-      font-size: 1.5rem;
+      font-size: 2.1rem;
       background: none;
       cursor: pointer;
+      padding: 0 px;
     }
     .nav {
       position: relative;
@@ -54,17 +59,23 @@ header {
         position: absolute;
         width: 98%;
         z-index: 90;
-       
+
         background: rgb(252, 251, 251);
-        transform: translate(-1000px, 120px);
+        transform: translate(-1000px, 150px);
         transition: 0.2s ease-in-out;
         padding: 2rem;
+
+        .nav__item{
+          a{
+            font-size: 1.5rem;
+          }
+        }
       }
       .nav__title {
-        font-size: 1.6rem;
+        font-size: 2.1rem;
       }
       .show {
-        transform: translate(-30px, 120px);
+        transform: translate(-30px, 150px);
       }
     }
   }
